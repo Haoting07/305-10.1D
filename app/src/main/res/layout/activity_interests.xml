@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/select_interests"
+            android:textColor="@color/textLight"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 添加 checkboxContainer 容器 -->
+        <LinearLayout
+            android:id="@+id/checkboxContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/topic_math"
+                android:text="@string/topic_math"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:buttonTint="@android:color/black" />
+
+            <CheckBox android:id="@+id/topic_science"
+                android:text="@string/topic_science"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:buttonTint="@android:color/black" />
+
+            <CheckBox android:id="@+id/topic_ai"
+                android:text="@string/topic_ai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:buttonTint="@android:color/black" />
+
+            <!-- 可添加更多兴趣选项 -->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/finishButton"
+            android:text="@string/continue_button"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/textLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
+

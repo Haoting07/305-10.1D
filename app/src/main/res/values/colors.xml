@@ -1,0 +1,10 @@
+<resources>
+    <color name="primaryColor">#7B61FF</color>
+    <color name="primaryGradientStart">#8E2DE2</color>
+    <color name="primaryGradientEnd">#4A00E0</color>
+    <color name="accentColor">#8AFF8A</color>
+    <color name="textDark">#222222</color>
+    <color name="textLight">#FFFFFF</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="buttonGreen">#A4F57A</color>
+</resources>
