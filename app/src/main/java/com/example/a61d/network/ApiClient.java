@@ -6,7 +6,7 @@ import okhttp3.OkHttpClient;
 import java.util.concurrent.TimeUnit;
 public class ApiClient {
     private static Retrofit retrofit;
-    private static final String BASE_URL = "http://172.16.11.111:5000/"; // 本地 Flask API
+    private static final String BASE_URL = "http://172.16.11.111:5001/"; // 本地 Flask API
 
     public static Retrofit getClient() {
         if (retrofit == null) {

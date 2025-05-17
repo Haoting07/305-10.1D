@@ -18,6 +18,7 @@ public class PreferenceManager {
     private static final String KEY_USERS = "user_map";
     private static final String KEY_CURRENT_USER = "current_user";
     private static final String KEY_INTERESTS_PREFIX = "interests_";
+    private static final String KEY_ACCOUNT_LEVEL_PREFIX = "account_level_"; // ✅ 新增字段
 
     private static final Gson gson = new Gson();
 
@@ -71,7 +72,24 @@ public class PreferenceManager {
         return interests.get(randomIndex);
     }
 
+    // ✅ 新增：保存当前用户的账户等级（如 Pro / Plus）
+    public static void saveUserAccountLevel(Context context, String level) {
+        String username = getCurrentUser(context);
+        if (username != null) {
+            getPrefs(context).edit()
+                    .putString(KEY_ACCOUNT_LEVEL_PREFIX + username, level)
+                    .apply();
+        }
+    }
 
+    // ✅ 新增：获取当前用户账户等级（默认为 Free）
+    public static String getUserAccountLevel(Context context) {
+        String username = getCurrentUser(context);
+        if (username == null) return "Free";
+        return getPrefs(context).getString(KEY_ACCOUNT_LEVEL_PREFIX + username, "Free");
+    }
+
+    // ✅ 清除登录用户（不清除注册数据）
     public static void clearSession(Context context) {
         getPrefs(context).edit().remove(KEY_CURRENT_USER).apply();
     }
@@ -90,5 +108,7 @@ public class PreferenceManager {
         getPrefs(context).edit().putString(KEY_USERS, gson.toJson(userMap)).apply();
     }
 }
+
+
 
 
