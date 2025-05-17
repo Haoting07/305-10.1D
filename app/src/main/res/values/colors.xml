@@ -1,10 +1,16 @@
 <resources>
-    <color name="primaryColor">#7B61FF</color>
-    <color name="primaryGradientStart">#8E2DE2</color>
-    <color name="primaryGradientEnd">#4A00E0</color>
-    <color name="accentColor">#8AFF8A</color>
-    <color name="textDark">#222222</color>
+    <color name="primaryColor">#90CAF9</color> <!-- 浅蓝主色 -->
+    <color name="primaryGradientStart">#E3F2FD</color> <!-- 渐变起点（白蓝） -->
+    <color name="primaryGradientEnd">#BBDEFB</color> <!-- 渐变终点 -->
+    <color name="accentColor">#0D47A1</color> <!-- 深蓝按钮高亮 -->
+    <color name="textDark">#0D47A1</color> <!-- 深蓝字体 -->
     <color name="textLight">#FFFFFF</color>
     <color name="cardBackground">#FFFFFF</color>
-    <color name="buttonGreen">#A4F57A</color>
+    <color name="buttonBlue">#64B5F6</color> <!-- 浅蓝按钮背景 -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
 </resources>
