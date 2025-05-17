@@ -1,29 +1,84 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="32dp"
-    android:gravity="center"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/welcomeText"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/startButton"
-        android:text="Start Quiz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <!-- Welcome 标题 -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:text="Welcome, username"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/textDark"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/logoutButton"
-        android:text="Logout"
-        android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+        <!-- 账户等级 -->
+        <TextView
+            android:id="@+id/accountLevelText"
+            android:text="Account Level: Free"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Start Quiz 按钮 -->
+        <Button
+            android:id="@+id/startButton"
+            android:text="Start Quiz"
+            android:textColor="@color/textLight"
+            android:background="@drawable/rounded_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Logout 按钮 -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:text="Logout"
+            android:textColor="@color/textLight"
+            android:background="@drawable/rounded_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 长条按钮组 -->
+        <Button
+            android:id="@+id/profileBtn"
+            android:text="Profile"
+            android:textColor="@color/textLight"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/historyBtn"
+            android:text="History"
+            android:textColor="@color/textLight"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/upgradeBtn"
+            android:text="Upgrade Account"
+            android:textColor="@color/textLight"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
+
 
