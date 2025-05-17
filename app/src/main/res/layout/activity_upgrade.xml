@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 顶部标题 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/backBtn"
+                android:text="←"
+                android:textSize="20sp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/purple_200"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:text="Upgrade Account"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 当前账户等级显示 -->
+        <TextView
+            android:id="@+id/upgradeStatusText"
+            android:text="Current Account: Free"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- 升级选项卡片 -->
+        <Button
+            android:id="@+id/basicBtn"
+            android:text="Upgrade to Basic - $3/mo"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/proBtn"
+            android:text="Upgrade to Pro - $5/mo"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/plusBtn"
+            android:text="Upgrade to Plus - $8/mo"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
